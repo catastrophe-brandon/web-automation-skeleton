@@ -1,12 +1,11 @@
 import requests
 import json
-import sys
 
 
 class Slacker(object):
 
     def post_message(self, webhook_url, message):
-
+        """ Post a message to the specified webhook url. """
         message_body = {
             'text': message
         }
