@@ -23,6 +23,8 @@ class ConfigLoader(object):
         return True
 
     def get_config(self):
+        if self.config is None:
+            self.load_config()
         return self.config
 
 
